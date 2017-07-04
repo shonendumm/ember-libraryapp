@@ -11,7 +11,6 @@ export default Ember.Controller.extend({
   isDisabled: Ember.computed.not('isValid'),
 
   actions: {
-
     saveInvitation() {
       const email = this.get('emailAddress');
 
@@ -23,7 +22,6 @@ export default Ember.Controller.extend({
         this.set('responseMessage', `Thank you! We saved your email address with the following id: ${response.get('id')}`);
         this.set('emailAddress', '');
       });
-
     }
   }
 
