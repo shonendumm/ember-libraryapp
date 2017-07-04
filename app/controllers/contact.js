@@ -25,11 +25,11 @@ export default Ember.Controller.extend({
           message: message
         });
 
-        newContact.save().then((response) => {
+        newContact.save().then(() => {
           this.set('responseMessage', `Thank you! Your message has been sent.`);
           this.set('emailAddress', '');
           this.set('message', '');
-                    
+
         });
 
       }
