@@ -1,3 +1,4 @@
+// app/controllers/index.js
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
@@ -14,11 +15,16 @@ export default Ember.Controller.extend({
     saveInvitation() {
       const email = this.get('emailAddress');
 
-      const newInvitation = this.store.createRecord('invitation', { email: email });
-      newInvitation.save();
+      const newInvitation = this.store.createRecord('invitation', {
+        email: email
+      });
 
-      this.set('responseMessage', `Thank you! We have just saved your email address: ${this.get('emailAddress')}`);
-      this.set('emailAddress', '');
+      newInvitation.save().then((response) => {
+        this.set('responseMessage', `Thank you! We saved your email address with the following id: ${response.get('id')}`);
+        this.set('emailAddress', '');
+      });
+
     }
   }
+
 });
