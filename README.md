@@ -1,8 +1,8 @@
 # library-app
 
 Work-in-progress.
-Following the EmberJS tutorial at [yoember]("http://yoember.com/")
-You can view my current live site [here]("https://libraryapp-e43af.firebaseapp.com/")
+Following the EmberJS tutorial at [yoember](http://yoember.com/)
+You can view my current live site [here](https://libraryapp-e43af.firebaseapp.com/)
 
 
 ## Prerequisites
