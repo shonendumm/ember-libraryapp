@@ -1,7 +1,9 @@
 # library-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Work-in-progress.
+Following the EmberJS tutorial at [yoember]("http://yoember.com/")
+You can view my current live site [here]("https://libraryapp-e43af.firebaseapp.com/")
+
 
 ## Prerequisites
 
